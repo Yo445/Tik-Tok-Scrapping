@@ -1,5 +1,4 @@
 import Search from "./Search";
-import Grid from './Grid';
 
 function App() {
   return (

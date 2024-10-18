@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(23, 15, 15);
+  background-color: #121212;
 }
 
 code {
@@ -157,4 +157,14 @@ code {
   100% {
     background-position: 0% 0%;
   }
+}
+
+
+
+/*====================================================< Loader  css >================================================ */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Full viewport height */
 }
