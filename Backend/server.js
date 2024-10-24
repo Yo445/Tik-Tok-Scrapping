@@ -71,8 +71,16 @@ app.listen(PORT, () => {
 
 
 
-const html = await page.content();
-console.log(html);
+const html = async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto('https://www.tiktok.com/search?q=javascript');
+  const html = await page.content();
+  await browser.close();
+  return html;
+}
+
+html().then(html => console.log(html));
 
 
 
